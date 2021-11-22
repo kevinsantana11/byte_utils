@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "bits"
+name = "byte_utils"
 version = "0.1.0"
