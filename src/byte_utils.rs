@@ -50,7 +50,7 @@ impl Bytes {
         return (res, car);
     }
 
-    fn is_equal(&self, rhs: &Bytes) -> bool {
+    pub fn is_equal(&self, rhs: &Bytes) -> bool {
         let longest: &Bytes;
         let shortest: &Bytes;
 
@@ -168,4 +168,14 @@ impl ops::Add for Bytes {
         return Bytes::new(res_bytes)
     }
 
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_binary_add() {
+        let (res, _) = Bytes::_binary_add(&3, &5, 0);
+        assert_eq!(res, 8 as u8)
+    }
 }
