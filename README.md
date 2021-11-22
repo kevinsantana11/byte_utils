@@ -17,5 +17,5 @@ This project provides the following:
 
 Some also rather interesting implementation of doing binary addition and subtraction using only bit manipulation are
 included for funzies as doing 1 + 2 is less cool than shifting bits around and using boolean logic to achieve the same
-goal.
+goal. Also carry and borrow bits are important for this lib to work so yeah maybe more than just fun.
 
