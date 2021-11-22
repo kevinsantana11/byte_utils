@@ -176,6 +176,12 @@ mod tests {
     #[test]
     fn test_binary_add() {
         let (res, _) = Bytes::_binary_add(&3, &5, 0);
-        assert_eq!(res, 8 as u8)
+        assert_eq!(res, 8)
+    }
+
+    #[test]
+    fn test_binary_sub() {
+        let (res, _) = Bytes::_binary_sub(&10, &9, 0);
+        assert_eq!(res, 1)
     }
 }
